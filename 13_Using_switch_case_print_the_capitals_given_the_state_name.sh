@@ -1,0 +1,16 @@
+while [ 1 ]
+do 
+echo " CHOOSE THE FOLLOWING OPTIONS FOR DISPLAYING THE CAPITAL OF THE STATES
+PRESS a/A FOR GOA
+PRESS b/B FOR MAHARASTRA
+PRESS c/C FOR KARNATAKA
+PRESS d/D FOR GUJARAT"
+read st
+case $st in
+a|A)echo "PANJIM " ;;
+b|B)echo "MUMBAI";;
+c|C)echo "BANGALORE";;
+d|D)echo "AHMEDABAD";;
+*)echo "INVALID OPTION"
+esac
+done

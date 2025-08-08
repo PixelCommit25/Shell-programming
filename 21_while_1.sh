@@ -1,0 +1,15 @@
+do 
+echo " CHOOSE THE FOLLOWING OPTIONS 
+PRESS a/A FOR DISPLAY PROCESSOR INFORMATION
+PRESS b/B FOR DISPLAY REAL TIME MEMORY STATUS 
+PRESS c/C FOR DISPLAY REAL TIME PROCESS STATUS
+PRESS d/D FOR EXIT "
+read st
+case $st in
+a|A)lscpu;;
+b|B)cat /proc/meminfo;;
+c|C)ps;;
+d|D)exit;;
+*)echo "INVALID OPTION"
+esac
+done
